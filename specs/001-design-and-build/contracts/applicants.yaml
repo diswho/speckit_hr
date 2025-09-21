@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Applicant API
+  version: 1.0.0
+paths:
+  /applicants:
+    get:
+      summary: List all applicants
+      responses:
+        '200':
+          description: A list of applicants
+    post:
+      summary: Create a new applicant
+      responses:
+        '201':
+          description: The created applicant
+  /applicants/{applicantId}:
+    get:
+      summary: Get an applicant by ID
+      parameters:
+        - name: applicantId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The applicant
+    put:
+      summary: Update an applicant
+      parameters:
+        - name: applicantId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The updated applicant
+    delete:
+      summary: Delete an applicant
+      parameters:
+        - name: applicantId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No content

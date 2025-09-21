@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Onboarding Plan API
+  version: 1.0.0
+paths:
+  /onboarding-plans:
+    get:
+      summary: List all onboarding plans
+      responses:
+        '200':
+          description: A list of onboarding plans
+    post:
+      summary: Create a new onboarding plan
+      responses:
+        '201':
+          description: The created onboarding plan
+  /onboarding-plans/{onboardingPlanId}:
+    get:
+      summary: Get an onboarding plan by ID
+      parameters:
+        - name: onboardingPlanId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The onboarding plan
+    put:
+      summary: Update an onboarding plan
+      parameters:
+        - name: onboardingPlanId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The updated onboarding plan
+    delete:
+      summary: Delete an onboarding plan
+      parameters:
+        - name: onboardingPlanId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No content

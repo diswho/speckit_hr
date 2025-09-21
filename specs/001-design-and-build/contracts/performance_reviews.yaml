@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Performance Review API
+  version: 1.0.0
+paths:
+  /performance-reviews:
+    get:
+      summary: List all performance reviews
+      responses:
+        '200':
+          description: A list of performance reviews
+    post:
+      summary: Create a new performance review
+      responses:
+        '201':
+          description: The created performance review
+  /performance-reviews/{performanceReviewId}:
+    get:
+      summary: Get a performance review by ID
+      parameters:
+        - name: performanceReviewId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The performance review
+    put:
+      summary: Update a performance review
+      parameters:
+        - name: performanceReviewId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The updated performance review
+    delete:
+      summary: Delete a performance review
+      parameters:
+        - name: performanceReviewId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No content

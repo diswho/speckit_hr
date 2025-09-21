@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Job Posting API
+  version: 1.0.0
+paths:
+  /job-postings:
+    get:
+      summary: List all job postings
+      responses:
+        '200':
+          description: A list of job postings
+    post:
+      summary: Create a new job posting
+      responses:
+        '201':
+          description: The created job posting
+  /job-postings/{jobPostingId}:
+    get:
+      summary: Get a job posting by ID
+      parameters:
+        - name: jobPostingId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The job posting
+    put:
+      summary: Update a job posting
+      parameters:
+        - name: jobPostingId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The updated job posting
+    delete:
+      summary: Delete a job posting
+      parameters:
+        - name: jobPostingId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No content
