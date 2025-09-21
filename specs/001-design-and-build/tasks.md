@@ -12,13 +12,13 @@
 
 ## Phase 3.2: Tests First (TDD) ⚠️ MUST COMPLETE BEFORE 3.3
 **CRITICAL: These tests MUST be written and MUST FAIL before ANY implementation**
-- [ ] T006 [P] Contract test for User API endpoints in `backend/tests/contract/test_users.py`.
-- [ ] T007 [P] Contract test for Job Posting API endpoints in `backend/tests/contract/test_job_postings.py`.
-- [ ] T008 [P] Contract test for Applicant API endpoints in `backend/tests/contract/test_applicants.py`.
-- [ ] T009 [P] Contract test for Onboarding Plan API endpoints in `backend/tests/contract/test_onboarding_plans.py`.
-- [ ] T010 [P] Contract test for Performance Review API endpoints in `backend/tests/contract/test_performance_reviews.py`.
-- [ ] T011 [P] Integration test for user registration and login flow in `backend/tests/integration/test_auth.py`.
-- [ ] T012 [P] Integration test for creating a job posting as an HR Manager in `backend/tests/integration/test_recruiting.py`.
+- [X] T006 [P] Contract test for User API endpoints in `backend/tests/contract/test_users.py`.
+- [X] T007 [P] Contract test for Job Posting API endpoints in `backend/tests/contract/test_job_postings.py`.
+- [X] T008 [P] Contract test for Applicant API endpoints in `backend/tests/contract/test_applicants.py`.
+- [X] T009 [P] Contract test for Onboarding Plan API endpoints in `backend/tests/contract/test_onboarding_plans.py`.
+- [X] T010 [P] Contract test for Performance Review API endpoints in `backend/tests/contract/test_performance_reviews.py`.
+- [X] T011 [P] Integration test for user registration and login flow in `backend/tests/integration/test_auth.py`.
+- [X] T012 [P] Integration test for creating a job posting as an HR Manager in `backend/tests/integration/test_recruiting.py`.
 
 ## Phase 3.3: Core Implementation (ONLY after tests are failing)
 
